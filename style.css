@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-title {
+    font-size: 28px;
+    margin-right: 20px;
+    font-family: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 3px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #08a5d4;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 75px;
+}
+
+.btn:hover {
+    background-color: #0099cc;
+}
+
+.profile {
+    background-color: #1E97C8;
+    padding: 30px;
+    position: relative;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid white;
+    position: absolute;
+    bottom: -40px;
+    left: 15px;
+}
+
+.main {
+    padding: 60px 15px 15px;
+    text-align: left;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.location {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.location .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.description {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.edit-profile {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1E97C8;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.edit-profile .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.edit-profile:hover {
+    text-decoration: underline;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    gap: 20px;
+} 
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.container,
+.connection-requests,
+.education-card {
+    margin-top: -15px;
+}
+
+
+.container {
+    flex: 2;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.connection-requests {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.connection-requests h3 {
+    color: white;
+}
+
+.requests-header {
+    background-color: #635f5f;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1px 1px 0 0;
+}
+
+.request {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    gap: 5px;
+    padding-top: 12px;
+}
+
+.request img.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 6px;
+}
+
+.request span {
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.request button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.request button .icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 6px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgb(211, 208, 208);
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin-left: auto;
+    position: relative;
+}
+
+.education-card {
+    max-width: 300px;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    margin-right: 207px;
+    font-family: Arial, sans-serif;
+}
+
+.requests-header h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.education-card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: -10px;
+}
+
+.education-card strong {
+    font-size: 15px;
+    color: #333;
+}
+
+.education-card span {
+    color: #666;
+}
+
+.connections-card {
+    position: absolute;
+    top: 285px;
+    margin-top: -20px;
+    margin-left: 325px;
+    padding-bottom: 5px;
+    margin-top: 80px;
+    max-width: 189px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.connections-card h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.requests-header h3{
+    color: white;
+}
+
+.connections-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.connections-card li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.connections-card img.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.connections-card span {
+    font-size: 15px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.badge1{
+    display: inline-block;
+    background-color: rgb(211, 208, 208);
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin-left: auto;
+    position: relative;
+}
+
+.view-more {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1E97C8;
+    border-top: 2px solid #a8a8a8;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.view-more:hover {
+    color: #0099cc;
+}
